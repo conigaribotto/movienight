@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: black;
+}
+
+.content {
+  width: 90%;
+  margin: auto;
+}
+h2 {
+  color: #ff9835;
+  font-family: 'Bungee Spice', cursive;
+}
+
+header {
+  padding: 30px 0;
+}
+
+header .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+header nav a {
+  align-items: center;
+  color: whitesmoke;
+  text-decoration: none;
+  margin-right: 10px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  letter-spacing: 1px;
+}
+
+header nav a:hover {
+  background-color: #FF7F3F;
+}
+
+.movie {
+  font-size: 16px;
+  min-height: 40.62em;
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, .20) 0%, rgba(0, 0, 0, .50) 100%), url(img/img1.jpg);
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 3.12em;
+  display: flex;
+  align-items: end;
+  background-size: 100% 100%;
+
+}
+
+.movie .content {
+  margin: 0 auto;
+  margin-bottom: 6.25em;
+}
+
+
+.movie .description {
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.75em;
+  max-width: 30%;
+  margin-bottom: 1.25em;
+}
+
+.movie .boton {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 0.31em;
+  padding: 0.93em 1.87em;
+  color: #fff;
+  margin-right: 1.25em;
+  cursor: pointer;
+  transition: .3s ease all;
+  font-size: 1.12em;
+}
+
+.movie .boton:hover {
+  background: #fff;
+  color: #000;
+}
+
+.movie.boton i {
+  margin-right: 1.25em;
+}
+
+
+/*MOVIES SELECTIONNNNNNNNNNNNNN*/
+.movies {
+  padding: 0px 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px auto;
+}
+
+.movies ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.movies ul li {
+  list-style: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin: 5px;
+  letter-spacing: 1px;
+  color: white;
+  border: solid #FF7F3F;
+}
+
+.movies ul li:hover {
+  background-color: #FF7F3F;
+}
+.movieSelection{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.movieSelection .movie-item:hover{
+  background-color: #FF7F3F;
+}
+.movie-item {
+  width: 250px;
+  margin: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 550px;
+  background-color: #363434c2;
+  border-radius: 20px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, .20);
+}
+
+.movie-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.movie-item h4 {
+  color: white;
+  text-align: center;
+  display: center;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+p {
+  color: white;
+  text-align: center;
+}
+
+ 

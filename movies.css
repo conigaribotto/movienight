@@ -1,61 +1,97 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: black;
-  }
-  
-  .content {
-    width: 90%;
-    margin: auto;
-  }
-  
-  h2 {
-    color: #ff9835;
-    font-family: 'Bungee Spice', cursive;
-  }
-  
-  header {
-    padding: 30px 0;
-  }
-  
-  header .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  header nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  
-  header nav a {
-    align-items: center;
-    color: whitesmoke;
-    text-decoration: none;
-    margin-right: 10px;
-    border-radius: 5px;
-    padding: 10px 20px;
-    letter-spacing: 1px;
-  }
-  
-  header nav a:hover {
-    background-color: #FF7F3F;
-  }
-  h3{
-    color: wheat;
-    margin: 10px;
-   }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  /*background-color: black;*/
+  background-image: url(https://img2.rtve.es/a/6872358?w=400&preview=1682336188585.jpg) ;
+}
+
+h2 {
+  color: #ff9835;
+  font-family: 'Bungee Spice', cursive;
+}
+
+header {
+  padding: 30px 0;
+}
+
+header .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
+header nav a {
+  align-items: center;
+  color: whitesmoke;
+  text-decoration: none;
+  margin-right: 10px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  letter-spacing: 1px;
+}
 
+header nav a:hover {
+  background-color: #FF7F3F;
+}
+
+h3 {
+  color: wheat;
+  margin: 10px;
+}
+
+.allmovies {
+  text-align: center;
+}
+
+video {
+  width: 100%;
+  max-width: 800px;
+}
+
+/* MOVIESSSSSSSSSSSS*/
+.movies .movie-item:hover{
+  background-color: #FF7F3F;
+}
+.movie-item {
+  width: 250px;
+  margin: 5px;
+  display: flex; /* este y flex wrap es para que la imagen quede dentro de la sombra*/
+  flex-wrap: wrap;
+  height: 550px;
+  background-color: #363434c2;
+  border-radius: 20px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, .20);
+}
+
+.movie-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.movie-item h4 {
+  color: white;
+  text-align: center;
+  display: center;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+p {
+  color: white;
+  text-align: center;
+}

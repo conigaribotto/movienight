@@ -49,45 +49,9 @@ header nav a:hover {
 }
 
 h3 {
-  color: white;
-  margin: 10px;
-}
-
-.trailermovie {
-  text-align: center;
-}
-
-
-/* MOVIESSSSSSSSSSSS*/
-.movies .movie-item:hover{
-  background-color: #FF7F3F;
-}
-.movie-item {
-  width: 250px;
-  margin: 5px;
-  display: flex; /* este y flex wrap es para que la imagen quede dentro de la sombra*/
-  flex-wrap: wrap;
-  height: 550px;
-  background-color: #363434c2;
-  border-radius: 20px;
-  box-shadow: 2px 2px 30px rgba(0, 0, 0, .20);
-}
-
-.movie-item img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-.movie-item h4 {
-  color: white;
-  text-align: center;
-  display: center;
-  font-size: 18px;
-  margin-top: 10px;
-}
-
-p {
-  color: white;
-  text-align: center;
-}
+    color: white;
+    margin: 10px;
+  }
+.trailerserie {
+    text-align: center;
+  }

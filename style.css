@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +16,7 @@ body {
   width: 90%;
   margin: auto;
 }
+
 h2 {
   color: #ff9835;
   font-family: 'Bungee Spice', cursive;
@@ -55,7 +57,7 @@ header nav a:hover {
   font-size: 16px;
   min-height: 40.62em;
   color: #fff;
-  background: linear-gradient(rgba(0, 0, 0, .20) 0%, rgba(0, 0, 0, .50) 100%), url(img/img1.jpg);
+  background: url(img/img1.jpg);
   background-position: center center;
   background-size: cover;
   margin-bottom: 3.12em;
@@ -101,7 +103,7 @@ header nav a:hover {
 }
 
 
-/*MOVIES SELECTIONNNNNNNNNNNNNN*/
+/*MOVIES GENRES*/
 .movies {
   padding: 0px 100px;
   width: 100%;
@@ -129,28 +131,32 @@ header nav a:hover {
   letter-spacing: 1px;
   color: white;
   border: solid #FF7F3F;
+  cursor: pointer;
 }
 
 .movies ul li:hover {
   background-color: #FF7F3F;
 }
-.movieSelection{
+
+/*MOVIES SECTIIIONNNNNNNNNNNN*/
+.movieSelection {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.movieSelection .movie-item:hover{
+
+.movieSelection .movie-item:hover {
   background-color: #FF7F3F;
 }
+
 .movie-item {
-  width: 250px;
+  width: 200px;
   margin: 5px;
   display: flex;
   flex-wrap: wrap;
   height: 550px;
   background-color: #363434c2;
   border-radius: 20px;
-  box-shadow: 2px 2px 30px rgba(0, 0, 0, .20);
 }
 
 .movie-item img {
@@ -172,4 +178,96 @@ p {
   text-align: center;
 }
 
- 
+/*FOOTERrrrrrrrrrrrrrrrrrr*/
+footer {
+  margin-top: 50px;
+  padding: 20px 0;
+  background-color: rgba(128, 128, 128, 0.3);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact {
+  color: #fff;
+  text-align: left;
+  letter-spacing: 2px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact h1 {
+  font-size: 24px;
+  margin: 10px;
+  text-align: left;
+  letter-spacing: 5px;
+  color: white;
+}
+
+.contact p {
+  font-size: 15px;
+  margin: 10px;
+  text-align: left;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.info p {
+  font-size: 18px;
+  text-align: left;
+  margin: 10px;
+}
+
+.box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.box input,
+.box textarea {
+  width: 100%;
+  margin: 5px;
+}
+
+.box input {
+  width: 50%;
+  height: 40px;
+  padding: 0 10px;
+  outline: none;
+  background: rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
+  color: white;
+}
+
+.box textarea {
+  width: 50%;
+  height: 130px;
+  padding: 0 10px;
+  outline: none;
+  background: rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
+  color: white;
+  padding: 10px;
+}
+
+form button {
+  width: 50%;
+  background: #ff9835;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+form button:hover {
+  background: #FF7F3F;
+}

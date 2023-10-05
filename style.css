@@ -146,6 +146,7 @@ header nav a:hover {
 
 .movieSelection .movie-item:hover {
   background-color: #faa668;
+  cursor: pointer;
 }
 
 .movie-item {

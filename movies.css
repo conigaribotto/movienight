@@ -57,37 +57,78 @@ h3 {
   text-align: center;
 }
 
-
-/* MOVIESSSSSSSSSSSS*/
-.movies .movie-item:hover{
-  background-color: #FF7F3F;
+/*CARRUSEEEEEEEEEEEL
+.carousel {
+  position: relative;
+  max-width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
 }
-.movie-item {
-  width: 250px;
-  margin: 5px;
-  display: flex; /* este y flex wrap es para que la imagen quede dentro de la sombra*/
+
+.carousel img {
+  width: 100%;
+  display: none;
+  border-radius: 20px;
+}
+
+.carousel i {
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  color: #333;
+}
+
+#prevBtn {
+  left: 10px;
+  color: white;
+}
+
+#nextBtn {
+  right: 10px;
+  color: white;
+}*/
+/* MOVIESSSSSSSSSSSS*/
+.movieSelection {
+  display: flex;
   flex-wrap: wrap;
-  height: 550px;
+  justify-content: space-between;
+}
+
+.movieSelection .movie-item:hover {
+  background-color: #faa668;
+  cursor: pointer;
+}
+
+.movie-item {
+  width: 20%;
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #363434c2;
   border-radius: 20px;
-  box-shadow: 2px 2px 30px rgba(0, 0, 0, .20);
+  padding: 10px; 
 }
 
 .movie-item img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
-
 .movie-item h4 {
   color: white;
   text-align: center;
-  display: center;
-  font-size: 18px;
-  margin-top: 10px;
+  font-size: 16px;
+  margin-bottom: 10px; 
 }
 
-p {
+.movie-item p {
   color: white;
   text-align: center;
+  font-size: 14px;
+  margin-top: 10px; 
 }

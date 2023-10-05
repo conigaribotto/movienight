@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
 
 * {
   margin: 0;
@@ -9,12 +10,17 @@
 body {
   font-family: 'Open Sans', sans-serif;
   /*background-color: black;*/
-  background-image: url(https://img2.rtve.es/a/6872358?w=400&preview=1682336188585.jpg) ;
+  background-image: url(https://img2.rtve.es/a/6872358?w=400&preview=1682336188585.jpg);
 }
 
 h2 {
   color: #ff9835;
   font-family: 'Bungee Spice', cursive;
+}
+
+.content {
+  width: 95%;
+  margin: auto;
 }
 
 header {
@@ -25,6 +31,8 @@ header .content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: 'Francois One', sans-serif;
+  font-size: 20px;
 }
 
 header nav {
@@ -51,45 +59,25 @@ header nav a:hover {
 h3 {
   color: white;
   margin: 10px;
+  font-family: 'Francois One', sans-serif;
+  margin-top: 50px;
+  font-size: 30px;
 }
 
 .trailermovie {
   text-align: center;
 }
 
-/*CARRUSEEEEEEEEEEEL
-.carousel {
-  position: relative;
-  max-width: 50%;
-  margin: 0 auto;
-  text-align: center;
-  overflow: hidden;
-}
-
-.carousel img {
-  width: 100%;
-  display: none;
-  border-radius: 20px;
-}
-
-.carousel i {
-  font-size: 24px;
-  position: absolute;
-  top: 50%;
-  cursor: pointer;
-  color: #333;
-}
-
-#prevBtn {
-  left: 10px;
-  color: white;
-}
-
-#nextBtn {
-  right: 10px;
-  color: white;
-}*/
 /* MOVIESSSSSSSSSSSS*/
+
+.movie-container h3 {
+  text-align: center;
+  font-size: 35px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-family: 'Francois One', sans-serif;
+}
+
 .movieSelection {
   display: flex;
   flex-wrap: wrap;
@@ -109,26 +97,71 @@ h3 {
   align-items: center;
   background-color: #363434c2;
   border-radius: 20px;
-  padding: 10px; 
+  padding: 10px;
 }
 
 .movie-item img {
   width: 100%;
-  height: 100%; 
+  height: 100%;
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 10px;
 }
+
 .movie-item h4 {
   color: white;
   text-align: center;
   font-size: 16px;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 
 .movie-item p {
   color: white;
   text-align: center;
   font-size: 14px;
-  margin-top: 10px; 
+  margin-top: 10px;
+}
+
+/*FOOOOOOOOOOOOOOOOTER*/
+
+footer {
+  margin-top: 50px;
+  padding: 20px 0;
+  background-color: rgba(128, 128, 128, 0.3);
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 auto;
+}
+
+.footer-container p {
+  text-align: center;
+  color: white;
+}
+
+.footer-container h2 {
+  text-align: center;
+}
+
+.icons {
+  font-size: 24px;
+  margin-top: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.icons a {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.icons a:hover {
+  color: #FF7F3F;
 }

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -30,10 +30,11 @@ header .content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: 'Francois One', sans-serif;
+  font-size: 20px;
 }
 
 header nav {
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -52,55 +53,40 @@ header nav a {
 header nav a:hover {
   background-color: #FF7F3F;
 }
+ /*CARRUSEEEEEEEEEEEEEEEEEEEELELEL*/
 
-.movie {
-  font-size: 16px;
-  min-height: 40.62em;
-  color: #fff;
-  background:rgba(128, 128, 128, 0.5) url(img/img1.jpg);
-  background-position: center center;
-  background-size: cover;
-  margin-bottom: 3.12em;
-  display: flex;
-  align-items: end;
-  background-size: 100% 100%;
-}
-
-.movie .content {
+ 
+.carousel {
+  position: relative;
+  max-width: 60%;
   margin: 0 auto;
-  margin-bottom: 6.25em;
+  text-align: center;
+  overflow: hidden;
 }
 
-
-.movie .description {
-  font-weight: normal;
-  font-size: 1em;
-  line-height: 1.75em;
-  max-width: 30%;
-  margin-bottom: 1.25em;
+.carousel img {
+  width: 100%;
+  display: none;
+  border-radius: 1%;
 }
 
-.movie .boton {
-  background: rgba(0, 0, 0, 0.5);
-  border: none;
-  border-radius: 0.31em;
-  padding: 0.93em 1.87em;
-  color: #fff;
-  margin-right: 1.25em;
+.carousel i {
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
   cursor: pointer;
-  transition: .3s ease all;
-  font-size: 1.12em;
+  color: #333;
 }
 
-.movie .boton:hover {
-  background: #fff;
-  color: #000;
+#prevBtn {
+  left: 10px;
+  color: white;
 }
 
-.movie.boton i {
-  margin-right: 1.25em;
+#nextBtn {
+  right: 10px;
+  color: white;
 }
-
 
 /*MOVIES GENRES*/
 .movies {
@@ -214,9 +200,12 @@ footer {
 
 .contact p {
   font-size: 15px;
-  margin: 10px;
+  line-height: 1.5; 
+  padding: 10px;
   text-align: left;
   letter-spacing: 2px;
+  color: white;
+  display: block;
 }
 
 .info p {
@@ -231,7 +220,9 @@ footer {
   flex-direction: column;
   text-align: center;
 }
-
+.box p{
+  color: #FF7F3F;
+}
 .box input,
 .box textarea {
   width: 100%;
@@ -273,5 +264,8 @@ form button {
 form button:hover {
   background: #FF7F3F;
 }
-
-/*intento de responsive*/
+.error {
+  border: 2px solid red;
+  background-color: #FF7F7F; /* Puedes ajustar el color de fondo a tu preferencia */
+  color: white;
+}

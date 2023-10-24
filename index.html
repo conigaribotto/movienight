@@ -9,11 +9,11 @@
   <link rel="shortcut icon" href="img/icons8-palomitas-48.png" type="image/x-icon">
   <title>MovieNight</title>
 </head>
-
+<!--MENU NAV-->
 <body>
   <header>
     <div class="content">
-      <h2>MovieNight</h2>
+      <h2><a href="index.html">MovieNight</a></h2>
       <nav>
         <a href="index.html">Home</a>
         <a href="movies.html">Movies</a>
@@ -22,19 +22,15 @@
       </nav>
     </div>
   </header>
-  <main>
-    <div class="movie">
-      <div class="content">
-        <h3 class="description">
-          Still reeling from the loss of Gamora,<br>
-          Peter Quill rallies his team to defend the universe.
-          <br> A mission that could mean the end of the Guardians if not successful.
-        </h3>
-        <button role="button" class="boton"></i>Reproducir</button>
-        <button role="button" class="boton"></i>Más información</button>
-      </div>
-    </div>
-  </main>
+<!-- CAAAAAAAAAAAAAAAARRUSEL-->
+  <div class="carousel">
+    <i class="fa fa-backward" id="prevBtn"></i>
+    <img src="img/pelicula2slider.jpg" alt="Imagen 1">
+    <img src="img/pelicula3slider.jpg" alt="Imagen 2">
+    <img src="img/pelicula4slider.jpg" alt="Imagen 3">
+    <i class="fa fa-forward" id="nextBtn"></i>
+  </div>
+  <!--MENU PELICULASSSSSSSSS-->
   <div class="movies" id="movieSection">
     <ul>
       <li class="list active" data-filter="All">All</li>
@@ -46,6 +42,7 @@
       <li class="list" data-filter="Musicals">Musicals</li>
     </ul>
   </div>
+  <!--PELICULASSSSSSSSSS IMG Y DESCRIP-->
   <section class="movie-container" id="movieSelection">
     <div class="movieSelection">
       <li class="movie-item" data-genre="Action">
@@ -117,11 +114,12 @@
       </li>
     </div>
   </section>
+  <!--FOOOOOOOOOOTER CONTACTO, FORMULARIO-->
   <footer>
     <div class="footer-container">
       <div class="contact">
         <h2>CONTACT US</h2>
-        <p>Unlock the Ultimate Movie Experience: Register Today! <br>
+        <p>Unlock the Ultimate Movie Experience: Register Today!   <br>
           Are you a cinephile looking to dive into the world of movies like never before? <br>
           Welcome to our movie website, your one-stop destination for all things cinema. <br>
           From classic masterpieces to the latest blockbusters, we've got it all. <br>
@@ -132,17 +130,19 @@
         </div>
       </div>
       <div class="box">
-        <form id="myForm">
+        <form id="myForm" onsubmit="return validateForm()">
           <input type="text" id="fullName" required placeholder="Full name">
           <input type="email" id="email" required placeholder="E-mail">
-          <input type="text" id="message" required placeholder="About">
+          <input type="tel" id="phoneNumber" required placeholder="Phone Number">
           <textarea id="comments" cols="30" rows="10" placeholder="Write your message/comments:"></textarea>
           <button type="submit">Submit</button>
+  
         </form>
+        <p class="warnings" id="warnings"></p>
         <p id="confirmationMessage" style="display: none;">Message Successfully Sent!</p>
       </div>
-    </div>
   </footer>
+  <script src="app.js"></script>
 </body>
 
 </html>

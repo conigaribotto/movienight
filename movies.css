@@ -36,7 +36,6 @@ header .content {
 }
 
 header nav {
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -64,8 +63,11 @@ h3 {
   font-size: 30px;
 }
 
+
 .trailermovie {
-  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column; 
 }
 
 /* MOVIESSSSSSSSSSSS*/

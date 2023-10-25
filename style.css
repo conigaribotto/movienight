@@ -53,6 +53,7 @@ header nav a {
 header nav a:hover {
   background-color: #FF7F3F;
 }
+
  /*CARRUSEEEEEEEEEEEEEEEEEEEELELEL*/
 
  
@@ -221,8 +222,11 @@ footer {
   text-align: center;
 }
 .box p{
-  color: #FF7F3F;
+  color: #ff9835;
+  font-size: 12px;
+  font-weight: bold;
 }
+
 .box input,
 .box textarea {
   width: 100%;
@@ -264,8 +268,5 @@ form button {
 form button:hover {
   background: #FF7F3F;
 }
-.error {
-  color: red;
-  font-size: 12px;
-  font-weight: bold;
-}
+
+

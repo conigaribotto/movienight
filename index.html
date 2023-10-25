@@ -9,6 +9,7 @@
   <link rel="shortcut icon" href="img/icons8-palomitas-48.png" type="image/x-icon">
   <title>MovieNight</title>
 </head>
+
 <!--MENU NAV-->
 
 <body>
@@ -23,7 +24,9 @@
       </nav>
     </div>
   </header>
+
   <!-- CAAAAAAAAAAAAAAAARRUSEL-->
+
   <div class="carousel">
     <i class="fa fa-backward" id="prevBtn"></i>
     <img src="img/pelicula2slider.jpg" alt="Imagen 1">
@@ -31,7 +34,9 @@
     <img src="img/pelicula4slider.jpg" alt="Imagen 3">
     <i class="fa fa-forward" id="nextBtn"></i>
   </div>
+
   <!--MENU PELICULASSSSSSSSS-->
+
   <div class="movies" id="movieSection">
     <ul>
       <li class="list active" data-filter="All">All</li>
@@ -43,8 +48,10 @@
       <li class="list" data-filter="Musicals">Musicals</li>
     </ul>
   </div>
+
   <!--PELICULASSSSSSSSSS IMG Y DESCRIP-->
-  <section class="movie-container" id="movieSelection">
+
+  <div class="movie-container" id="movieSelection">
     <div class="movieSelection">
       <li class="movie-item" data-genre="Action">
         <img src="img/pelicula1.jpeg" alt="Título de la Película 1">
@@ -114,8 +121,10 @@
           constant change after the Clone Wars.</p>
       </li>
     </div>
-  </section>
+  </div>
+
   <!--FOOOOOOOOOOTER CONTACTO, FORMULARIO-->
+
   <footer>
     <div class="footer-container">
       <div class="contact">
@@ -131,7 +140,7 @@
         </div>
       </div>
       <div class="box">
-        <form id="myForm" onsubmit="return validateForm()">
+        <form id="myForm">
           <input type="text" id="fullName" placeholder="Full name">
           <input type="email" id="email" placeholder="E-mail">
           <input type="tel" id="phoneNumber" placeholder="Phone Number">
@@ -139,7 +148,7 @@
           <button type="submit">Submit</button>
           <p id="error" class="error"></p>
         </form>
-        <p id="confirmationMessage" style="display: none;">Message Successfully Sent!</p>
+        <p id="confirmationMessage" style="display: none;"></p>
       </div>
   </footer>
   <script src="app.js"></script>

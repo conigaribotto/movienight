@@ -265,7 +265,7 @@ form button:hover {
   background: #FF7F3F;
 }
 .error {
-  border: 2px solid red;
-  background-color: #FF7F7F; /* Puedes ajustar el color de fondo a tu preferencia */
-  color: white;
+  color: red;
+  font-size: 12px;
+  font-weight: bold;
 }

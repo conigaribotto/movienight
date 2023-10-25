@@ -10,6 +10,7 @@
   <title>MovieNight</title>
 </head>
 <!--MENU NAV-->
+
 <body>
   <header>
     <div class="content">
@@ -22,7 +23,7 @@
       </nav>
     </div>
   </header>
-<!-- CAAAAAAAAAAAAAAAARRUSEL-->
+  <!-- CAAAAAAAAAAAAAAAARRUSEL-->
   <div class="carousel">
     <i class="fa fa-backward" id="prevBtn"></i>
     <img src="img/pelicula2slider.jpg" alt="Imagen 1">
@@ -119,7 +120,7 @@
     <div class="footer-container">
       <div class="contact">
         <h2>CONTACT US</h2>
-        <p>Unlock the Ultimate Movie Experience: Register Today!   <br>
+        <p>Unlock the Ultimate Movie Experience: Register Today! <br>
           Are you a cinephile looking to dive into the world of movies like never before? <br>
           Welcome to our movie website, your one-stop destination for all things cinema. <br>
           From classic masterpieces to the latest blockbusters, we've got it all. <br>
@@ -131,14 +132,13 @@
       </div>
       <div class="box">
         <form id="myForm" onsubmit="return validateForm()">
-          <input type="text" id="fullName" required placeholder="Full name">
-          <input type="email" id="email" required placeholder="E-mail">
-          <input type="tel" id="phoneNumber" required placeholder="Phone Number">
+          <input type="text" id="fullName" placeholder="Full name">
+          <input type="email" id="email" placeholder="E-mail">
+          <input type="tel" id="phoneNumber" placeholder="Phone Number">
           <textarea id="comments" cols="30" rows="10" placeholder="Write your message/comments:"></textarea>
           <button type="submit">Submit</button>
-  
+          <p id="error" class="error"></p>
         </form>
-        <p class="warnings" id="warnings"></p>
         <p id="confirmationMessage" style="display: none;">Message Successfully Sent!</p>
       </div>
   </footer>

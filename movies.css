@@ -71,58 +71,64 @@ h3 {
 }
 
 /* MOVIESSSSSSSSSSSS*/
-
-.movie-container h3 {
-  text-align: center;
-  font-size: 35px;
-  margin-top: 50px;
-  margin-bottom: 30px;
-  font-family: 'Francois One', sans-serif;
-}
-
-.movieSelection {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
 .movieSelection .movie-item:hover {
   background-color: #faa668;
   cursor: pointer;
 }
-
-.movie-item {
-  width: 20%;
-  margin: 2%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #363434c2;
-  border-radius: 20px;
+.movieSelection .movie-item {
+  border: 1px solid #ccc;
+  text-align: center;
+  margin: 5px;
   padding: 10px;
+  border-radius: 10px;
+  background-color:rgba(118, 109, 109, 0.5);;
+}
+table {
+  max-width: 100%;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 20px;
+}
+
+td {
+  width: 25%;
+  display: table-cell;
+  vertical-align: top; /* Alinea el contenido en la parte superior de las celdas */
+  padding: 10px; /* Agrega un espacio alrededor del contenido de las celdas */
+}
+
+@media (max-width: 768px) {
+  td {
+    width: 50%; /* Cambia el ancho de las columnas para adaptarse a pantallas más pequeñas */
+  }
+
+  table {
+    width: 100%; /* Hace que la tabla ocupe el 100% del ancho en pantallas pequeñas */
+  }
 }
 
 .movie-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  max-width: 100%; 
+  height: auto; 
   border-radius: 10px;
   margin-bottom: 10px;
 }
 
 .movie-item h4 {
-  color: white;
-  text-align: center;
+  color: whitesmoke;
   font-size: 16px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .movie-item p {
-  color: white;
-  text-align: center;
+  color: whitesmoke;
   font-size: 14px;
   margin-top: 10px;
+  text-align: center;
 }
+
 
 /*FOOOOOOOOOOOOOOOOTER*/
 

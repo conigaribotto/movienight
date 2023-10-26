@@ -46,7 +46,6 @@ showImage(ImageIndex);
 startAutomaticSlide();
 
 /*FORRRRRRRRRRMULARIO*/
-
 const fullName = document.getElementById('fullName');
 const email = document.getElementById('email');
 const phoneNumber = document.getElementById('phoneNumber');

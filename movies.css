@@ -94,17 +94,17 @@ table {
 td {
   width: 25%;
   display: table-cell;
-  vertical-align: top; /* Alinea el contenido en la parte superior de las celdas */
-  padding: 10px; /* Agrega un espacio alrededor del contenido de las celdas */
+  vertical-align: top; 
+  padding: 10px; 
 }
 
 @media (max-width: 768px) {
   td {
-    width: 50%; /* Cambia el ancho de las columnas para adaptarse a pantallas más pequeñas */
+    width: 50%; 
   }
 
   table {
-    width: 100%; /* Hace que la tabla ocupe el 100% del ancho en pantallas pequeñas */
+    width: 100%; 
   }
 }
 

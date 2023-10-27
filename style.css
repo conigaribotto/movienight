@@ -58,7 +58,7 @@ header nav a:hover {
 /*CARRUSEEEEEEEEEEEEEEEEEEEELELEL*/
 #img-container {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   max-width: 100%;
@@ -69,13 +69,15 @@ header nav a:hover {
   max-width: 50%;
   border-radius: 10px;
 }
+
 .button-container {
   margin-top: 10px;
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  gap: 10px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
+
 #img-container #back {
   left: 10px;
   color: #FF7F3F;

@@ -2,6 +2,7 @@
 var i = 0;
 var img = document.getElementById("img");
 var array = ["img/pelicula4slider.jpg", "img/pelicula2slider.jpg", "img/pelicula3slider.jpg"];
+var intervalId;
 
 function next() {
     if (i === array.length - 1) {
@@ -21,53 +22,12 @@ function back() {
     img.src = array[i];
 }
 
-
-//PRIMER INTENTO CARRUSEL 
-/*const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
-const images = document.querySelectorAll('.carousel img');
-
-let ImageIndex = 0;
-let automaticSlideInterval; // variable para hacerlo automatico 
- 
-function showImage(index) {
-    images.forEach((image, i) => {
-        if (i === index) {
-            image.style.display = 'block';
-        } else {
-            image.style.display = 'none';
-        }
-    });
+function startAutoSlide() {
+    // Pasa las imagenes cada 2 segundos
+    intervalId = setInterval(next, 2000);
 }
 
-function nextImage() {
-    ImageIndex = (ImageIndex + 1) % images.length;
-    showImage(ImageIndex);
-}
-
-function prevImage() {
-    ImageIndex = (ImageIndex - 1 + images.length) % images.length;
-    showImage(ImageIndex);
-}
-
-prevBtn.addEventListener('click', () => {
-    prevImage();
-    clearInterval(automaticSlideInterval); // Para las img al hacer click en las flechas
-});
-
-nextBtn.addEventListener('click', () => {
-    nextImage();
-    clearInterval(automaticSlideInterval);
-});
-
-// Función para cambiar automáticamente las imágenes cada 2 segundos
-function startAutomaticSlide() {
-    automaticSlideInterval = setInterval(() => {
-        nextImage();
-    }, 2000);
-}
-showImage(ImageIndex);
-startAutomaticSlide();*/
+startAutoSlide();
 
 /*FORRRRRRRRRRMULARIO*/
 const fullName = document.getElementById('fullName');

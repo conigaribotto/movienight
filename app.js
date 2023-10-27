@@ -1,7 +1,7 @@
 /*CARRUSEEEEEEEEEEEEEEEEEEELLELLE*/
 var i = 0;
 var img = document.getElementById("img");
-var array = ["img/pelicula4slider.jpg", "img/pelicula2slider.jpg", "img/pelicula3slider.jpg"];
+var array = ["img/pelicula4slider.jpg", "img/pelicula2slider.jpg", "img/serie1slider.jpg"];
 var intervalId;
 
 function next() {
@@ -37,6 +37,7 @@ const comments = document.getElementById('comments');
 const form = document.getElementById('myForm');
 const errorElement = document.getElementById('error');
 const confirmationMessage = document.getElementById('confirmationMessage');
+const phoneRegex = /^\d+$/;
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -57,8 +58,8 @@ form.addEventListener('submit', (e) => {
         email.classList.remove('error');
     }
 
-    if (phoneNumber.value.trim() === '') {
-        messages.push('Phone Number is required');
+    if (phoneNumber.value.trim() === ''||  !phoneRegex.test(phoneNumber.value)) {
+        messages.push('Please enter a valid Phone number');
         phoneNumber.classList.add('error');
     } else {
         phoneNumber.classList.remove('error');

@@ -26,13 +26,12 @@
   </header>
 
   <!-- CAAAAAAAAAAAAAAAARRUSEL-->
-
-  <div class="carousel">
-    <i class="fa fa-backward" id="prevBtn"></i>
-    <img src="img/pelicula2slider.jpg" alt="Imagen 1">
-    <img src="img/pelicula3slider.jpg" alt="Imagen 2">
-    <img src="img/pelicula4slider.jpg" alt="Imagen 3">
-    <i class="fa fa-forward" id="nextBtn"></i>
+  <div id="img-container">
+    <img src="img/pelicula4slider.jpg" alt="Image" id="img">
+    <div class="button-container">
+      <i class="fa fa-backward" id="back" onclick="back()"></i>
+      <i class="fa fa-forward" id="next" onclick="next()"></i>
+    </div>
   </div>
 
   <!--MENU PELICULASSSSSSSSS-->
@@ -55,73 +54,97 @@
     <div class="movieSelection">
       <table>
         <tr>
-      <td class="movie-item" data-genre="Action">
-        <img src="img/pelicula1.jpeg" alt="Título de la Película 1">
-        <h4>Miss Peregrine's home for peculiar children</h4>
-        <p> Lorem ipsum dolor sit amet. Aut ipsa sint ut ipsam eveniet aut facere consequatur. Non aliquam consequatur et beatae rerum non tempora laborum. Eum dolorum voluptate sed rerum eius est molestias quidem.</p>
-      </td>
-      <td class="movie-item" data-genre="Fantasy">
-        <img src="img/pelicula2.jpeg" alt="Título de la Película 2">
-        <h4>Fantastic Beasts: The Crimes of Grindelwald</h4>
-        <p> Lorem ipsum dolor sit amet. Aut ipsa sint ut ipsam eveniet aut facere consequatur. Non aliquam consequatur et beatae rerum non tempora laborum. Eum dolorum voluptate sed rerum eius est molestias quidem.</p>
-      </td>
-      <td class="movie-item" data-genre="Fantasy">
-        <img src="img/pelicula3.png" alt="Título de la Película 2">
-        <h4>Uncharted</h4>
-        <p> Lorem ipsum dolor sit amet. Aut ipsa sint ut ipsam eveniet aut facere consequatur. Non aliquam consequatur et beatae rerum non tempora laborum. Eum dolorum voluptate sed rerum eius est molestias quidem.</p>
-        </td>
-      <td class="movie-item" data-genre="Fantasy">
-        <img src="img/pelicula4.png" alt="Título de la Película 2">
-        <h4> The Batman</h4>
-        <p> Lorem ipsum dolor sit amet. Aut ipsa sint ut ipsam eveniet aut facere consequatur. Non aliquam consequatur et beatae rerum non tempora laborum. Eum dolorum voluptate sed rerum eius est molestias quidem.</p>
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td class="movie-item" data-genre="Fantasy">
-        <img src="img/pelicula5.png" alt="Título de la Película 2">
-        <h4>Doctor Strange multiverse of madness</h4>
-        <p> Lorem ipsum dolor sit amet. Aut ipsa sint ut ipsam eveniet aut facere consequatur. Non aliquam consequatur et beatae rerum non tempora laborum. Eum dolorum voluptate sed rerum eius est molestias quidem.</p>
-      </td>
-      <td class="movie-item" data-genre="Fantasy">
-        <img src="img/serie1.png" alt="Título de la Película 2">
-        <h4>Vikingos: Valhalla</h4>
-        <p> Lorem ipsum dolor sit amet. Aut ipsa sint ut ipsam eveniet aut facere consequatur. Non aliquam consequatur et beatae rerum non tempora laborum. Eum dolorum voluptate sed rerum eius est molestias quidem.</p>
-      </td>
-      <td class="movie-item" data-genre="Fantasy">
-        <img src="img/serie2.png" alt="Título de la Película 2">
-        <h4> Halo </h4>
-        <p> Lorem ipsum dolor sit amet. Aut ipsa sint ut ipsam eveniet aut facere consequatur. Non aliquam consequatur et beatae rerum non tempora laborum. Eum dolorum voluptate sed rerum eius est molestias quidem.</p>
-      </td>
-      <td class="movie-item" data-genre="Fantasy">
-        <img src="img/serie3.jpg" alt="Título de la Película 2">
-        <h4>Fear the walking dead</h4>
-        <p> Lorem ipsum dolor sit amet. Aut ipsa sint ut ipsam eveniet aut facere consequatur. Non aliquam consequatur et beatae rerum non tempora laborum. Eum dolorum voluptate sed rerum eius est molestias quidem.</p>
-        </td>
-      </tr>
-      <tr>
-      <td class="movie-item" data-genre="Fantasy">
-        <img src="img/serie4.jpg" alt="Título de la Película 2">
-        <h4>Brooklyn nine-nine</h4>
-        <p> Lorem ipsum dolor sit amet. Aut ipsa sint ut ipsam eveniet aut facere consequatur. Non aliquam consequatur et beatae rerum non tempora laborum. Eum dolorum voluptate sed rerum eius est molestias quidem.</p>
-      </td>
-      <td class="movie-item" data-genre="Fantasy">
-        <img src="img/serie8.jpg" alt="Título de la Película 2">
-        <h4>DC Legends of Tomorrow</h4>
-        <p> Lorem ipsum dolor sit amet. Aut ipsa sint ut ipsam eveniet aut facere consequatur. Non aliquam consequatur et beatae rerum non tempora laborum. Eum dolorum voluptate sed rerum eius est molestias quidem.</p>
-        </td>
-      <td class="movie-item" data-genre="Fantasy">
-        <img src="img/pelicula12.jpeg" alt="Título de la Película 2">
-        <h4>A wrinkle in time</h4>
-        <p> Lorem ipsum dolor sit amet. Aut ipsa sint ut ipsam eveniet aut facere consequatur. Non aliquam consequatur et beatae rerum non tempora laborum. Eum dolorum voluptate sed rerum eius est molestias quidem.</p>
-        </td>
-      <td class="movie-item" data-genre="Fantasy">
-        <img src="img/serie5.jpg" alt="Título de la Película 2">
-        <h4>Star Wars: The Bad Batch</h4>
-        <p> Lorem ipsum dolor sit amet. Aut ipsa sint ut ipsam eveniet aut facere consequatur. Non aliquam consequatur et beatae rerum non tempora laborum. Eum dolorum voluptate sed rerum eius est molestias quidem.</p>
-        </td>
-      </tr>
-    </table>
+          <td class="movie-item" data-genre="Action">
+            <img src="img/pelicula1.jpeg" alt="Título de la Película 1">
+            <h4>Miss Peregrine's home for peculiar children</h4>
+            <p> Lorem ipsum dolor sit amet. Aut ipsa sint ut ipsam eveniet aut facere consequatur. Non aliquam
+              consequatur et beatae rerum non tempora laborum. Eum dolorum voluptate sed rerum eius est molestias
+              quidem.</p>
+          </td>
+          <td class="movie-item" data-genre="Fantasy">
+            <img src="img/pelicula2.jpeg" alt="Título de la Película 2">
+            <h4>Fantastic Beasts: The Crimes of Grindelwald</h4>
+            <p> Lorem ipsum dolor sit amet. Aut ipsa sint ut ipsam eveniet aut facere consequatur. Non aliquam
+              consequatur et beatae rerum non tempora laborum. Eum dolorum voluptate sed rerum eius est molestias
+              quidem.</p>
+          </td>
+          <td class="movie-item" data-genre="Fantasy">
+            <img src="img/pelicula3.png" alt="Título de la Película 2">
+            <h4>Uncharted</h4>
+            <p> Lorem ipsum dolor sit amet. Aut ipsa sint ut ipsam eveniet aut facere consequatur. Non aliquam
+              consequatur et beatae rerum non tempora laborum. Eum dolorum voluptate sed rerum eius est molestias
+              quidem.</p>
+          </td>
+          <td class="movie-item" data-genre="Fantasy">
+            <img src="img/pelicula4.png" alt="Título de la Película 2">
+            <h4> The Batman</h4>
+            <p> Lorem ipsum dolor sit amet. Aut ipsa sint ut ipsam eveniet aut facere consequatur. Non aliquam
+              consequatur et beatae rerum non tempora laborum. Eum dolorum voluptate sed rerum eius est molestias
+              quidem.</p>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="movie-item" data-genre="Fantasy">
+            <img src="img/pelicula5.png" alt="Título de la Película 2">
+            <h4>Doctor Strange multiverse of madness</h4>
+            <p> Lorem ipsum dolor sit amet. Aut ipsa sint ut ipsam eveniet aut facere consequatur. Non aliquam
+              consequatur et beatae rerum non tempora laborum. Eum dolorum voluptate sed rerum eius est molestias
+              quidem.</p>
+          </td>
+          <td class="movie-item" data-genre="Fantasy">
+            <img src="img/serie1.png" alt="Título de la Película 2">
+            <h4>Vikingos: Valhalla</h4>
+            <p> Lorem ipsum dolor sit amet. Aut ipsa sint ut ipsam eveniet aut facere consequatur. Non aliquam
+              consequatur et beatae rerum non tempora laborum. Eum dolorum voluptate sed rerum eius est molestias
+              quidem.</p>
+          </td>
+          <td class="movie-item" data-genre="Fantasy">
+            <img src="img/serie2.png" alt="Título de la Película 2">
+            <h4> Halo </h4>
+            <p> Lorem ipsum dolor sit amet. Aut ipsa sint ut ipsam eveniet aut facere consequatur. Non aliquam
+              consequatur et beatae rerum non tempora laborum. Eum dolorum voluptate sed rerum eius est molestias
+              quidem.</p>
+          </td>
+          <td class="movie-item" data-genre="Fantasy">
+            <img src="img/serie3.jpg" alt="Título de la Película 2">
+            <h4>Fear the walking dead</h4>
+            <p> Lorem ipsum dolor sit amet. Aut ipsa sint ut ipsam eveniet aut facere consequatur. Non aliquam
+              consequatur et beatae rerum non tempora laborum. Eum dolorum voluptate sed rerum eius est molestias
+              quidem.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="movie-item" data-genre="Fantasy">
+            <img src="img/serie4.jpg" alt="Título de la Película 2">
+            <h4>Brooklyn nine-nine</h4>
+            <p> Lorem ipsum dolor sit amet. Aut ipsa sint ut ipsam eveniet aut facere consequatur. Non aliquam
+              consequatur et beatae rerum non tempora laborum. Eum dolorum voluptate sed rerum eius est molestias
+              quidem.</p>
+          </td>
+          <td class="movie-item" data-genre="Fantasy">
+            <img src="img/serie8.jpg" alt="Título de la Película 2">
+            <h4>DC Legends of Tomorrow</h4>
+            <p> Lorem ipsum dolor sit amet. Aut ipsa sint ut ipsam eveniet aut facere consequatur. Non aliquam
+              consequatur et beatae rerum non tempora laborum. Eum dolorum voluptate sed rerum eius est molestias
+              quidem.</p>
+          </td>
+          <td class="movie-item" data-genre="Fantasy">
+            <img src="img/pelicula12.jpeg" alt="Título de la Película 2">
+            <h4>A wrinkle in time</h4>
+            <p> Lorem ipsum dolor sit amet. Aut ipsa sint ut ipsam eveniet aut facere consequatur. Non aliquam
+              consequatur et beatae rerum non tempora laborum. Eum dolorum voluptate sed rerum eius est molestias
+              quidem.</p>
+          </td>
+          <td class="movie-item" data-genre="Fantasy">
+            <img src="img/serie5.jpg" alt="Título de la Película 2">
+            <h4>Star Wars: The Bad Batch</h4>
+            <p> Lorem ipsum dolor sit amet. Aut ipsa sint ut ipsam eveniet aut facere consequatur. Non aliquam
+              consequatur et beatae rerum non tempora laborum. Eum dolorum voluptate sed rerum eius est molestias
+              quidem.</p>
+          </td>
+        </tr>
+      </table>
     </div>
   </div>
 

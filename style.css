@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -54,40 +55,37 @@ header nav a:hover {
   background-color: #FF7F3F;
 }
 
- /*CARRUSEEEEEEEEEEEEEEEEEEEELELEL*/
-
- 
-.carousel {
-  position: relative;
-  max-width: 60%;
-  margin: 0 auto;
-  text-align: center;
-  overflow: hidden;
+/*CARRUSEEEEEEEEEEEEEEEEEEEELELEL*/
+#img-container {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
 }
 
-.carousel img {
+#img {
   width: 100%;
-  display: none;
-  border-radius: 1%;
+  max-width: 50%;
+  border-radius: 10px;
 }
-
-.carousel i {
-  font-size: 24px;
-  position: absolute;
-  top: 50%;
-  cursor: pointer;
-  color: #333;
+.button-container {
+  margin-top: 10px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 10px; 
 }
-
-#prevBtn {
+#img-container #back {
   left: 10px;
-  color: white;
+  color: #FF7F3F;
 }
 
-#nextBtn {
+#img-container #next {
   right: 10px;
-  color: white;
+  color: #FF7F3F;
 }
+
 
 /*MOVIES GENRES*/
 .movies {
@@ -129,14 +127,17 @@ header nav a:hover {
   background-color: #faa668;
   cursor: pointer;
 }
+
 .movieSelection .movie-item {
   border: 1px solid #ccc;
   text-align: center;
   margin: 5px;
   padding: 10px;
   border-radius: 10px;
-  background-color:rgba(118, 109, 109, 0.5);;
+  background-color: rgba(118, 109, 109, 0.5);
+  ;
 }
+
 table {
   max-width: 100%;
   width: 100%;
@@ -148,13 +149,13 @@ table {
 td {
   width: 25%;
   display: table-cell;
-  vertical-align: top; 
-  padding: 10px; 
+  vertical-align: top;
+  padding: 10px;
 }
 
 @media (max-width: 768px) {
   td {
-    width: 50%; 
+    width: 50%;
   }
 
   table {
@@ -163,8 +164,8 @@ td {
 }
 
 .movie-item img {
-  max-width: 100%; 
-  height: auto; 
+  max-width: 100%;
+  height: auto;
   border-radius: 10px;
   margin-bottom: 10px;
 }
@@ -216,7 +217,7 @@ footer {
 
 .contact p {
   font-size: 15px;
-  line-height: 1.5; 
+  line-height: 1.5;
   padding: 10px;
   text-align: left;
   letter-spacing: 2px;
@@ -236,7 +237,8 @@ footer {
   flex-direction: column;
   text-align: center;
 }
-.box p{
+
+.box p {
   margin-top: 4px;
   color: #ff9835;
   font-size: 12px;
@@ -284,5 +286,3 @@ form button {
 form button:hover {
   background: #FF7F3F;
 }
-
-

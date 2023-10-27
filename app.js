@@ -1,5 +1,29 @@
 /*CARRUSEEEEEEEEEEEEEEEEEEELLELLE*/
-const prevBtn = document.getElementById('prevBtn');
+var i = 0;
+var img = document.getElementById("img");
+var array = ["img/pelicula4slider.jpg", "img/pelicula2slider.jpg", "img/pelicula3slider.jpg"];
+
+function next() {
+    if (i === array.length - 1) {
+        i = 0;
+    } else {
+        i++;
+    }
+    img.src = array[i];
+}
+
+function back() {
+    if (i === 0) {
+        i = array.length - 1;
+    } else {
+        i--;
+    }
+    img.src = array[i];
+}
+
+
+//PRIMER INTENTO CARRUSEL 
+/*const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 const images = document.querySelectorAll('.carousel img');
 
@@ -43,7 +67,7 @@ function startAutomaticSlide() {
     }, 2000);
 }
 showImage(ImageIndex);
-startAutomaticSlide();
+startAutomaticSlide();*/
 
 /*FORRRRRRRRRRMULARIO*/
 const fullName = document.getElementById('fullName');
